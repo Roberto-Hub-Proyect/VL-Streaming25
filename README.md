@@ -1,2 +1,7 @@
 # VLStreaming25
-Virtualización ligera y cloud computing. Despliegue de servidores streaming para la docencia online de ingeniería.
+Titulo: Virtualización ligera y cloud computing. Despliegue de servidores streaming para la docencia online de ingeniería.
+Universidad Nacional de Educación a Distancia. Escuela Técnica Superior de Ingeniería Informática.
+Proyecto Fin de Grado en Ingenieria Informática
+Autor: Roberto Avis Hernández.
+Dirigido por: D. Agustín Carlos Caminero Herráez.
+Convocatoria Septiembre 2025.
