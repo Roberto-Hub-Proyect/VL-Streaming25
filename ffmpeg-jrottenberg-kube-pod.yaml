@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ffmpeg-streaming
+spec:
+  restartPolicy: Never
+  containers:
+    - name: ffmpeg
+      image: jrottenberg/ffmpeg
+      command: ["ffmpeg"]
+      args: ["-re", "-i", "/videos/video.mp4", "-c", "copy", "-f", "flv", "rtmp://192.168.49.2:31031/live/test"]
+      volumeMounts:
+        - name: videos
+          mountPath: /videos
+  volumes:
+    - name: videos
+      hostPath:
+        path: /home/roberto/ejemplos
+        type: Directory

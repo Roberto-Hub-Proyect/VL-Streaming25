@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  rtmp1:
+    image: tiangolo/nginx-rtmp
+    container_name: rtmp-server-1
+    ports:
+      - "1935:1935"   # RTMP del primer servidor
+      - "8080:80"     # HTTP del primer servidor
+
+  rtmp2:
+    image: alfg/nginx-rtmp
+    container_name: rtmp-server-2
+    ports:
+      - "1936:1935"   # RTMP del segundo servidor
+      - "8081:80"     # HTTP del segundo servidor

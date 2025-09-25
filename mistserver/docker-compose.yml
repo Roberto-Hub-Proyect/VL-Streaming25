@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  mistserver:
+    build: .
+    container_name: mist-compose
+    image: mist-compose-construida
+    network_mode: "host"
+    shm_size: 1g
+    restart: always

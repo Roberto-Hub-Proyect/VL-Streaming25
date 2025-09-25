@@ -1,0 +1,3 @@
+FROM ddvtech/mistserver
+
+COPY config.json .

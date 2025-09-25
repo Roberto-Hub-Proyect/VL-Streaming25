@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-rtmp
+  labels:
+    app: nginx-rtmp
+spec:
+  containers:
+  - name: nginx-rtmp
+    image: tiangolo/nginx-rtmp
+    ports:
+    - containerPort: 1935   # Puerto RTMP
+
+
